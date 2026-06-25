@@ -240,9 +240,17 @@ h3 {
 }
 
 .hero-copy p {
-  max-width: 45rem;
+  width: fit-content;
+  max-width: min(45rem, calc(100% + 1.5rem));
   margin-top: 1.35rem;
+  margin-left: -0.75rem;
+  padding: 0.65rem 0.75rem 0.7rem;
   color: #14253a;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(217, 227, 236, 0.66);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 34px rgba(6, 40, 70, 0.08);
+  backdrop-filter: blur(3px);
   font-size: clamp(1.06rem, 1.45vw, 1.32rem);
   line-height: 1.62;
 }
@@ -635,6 +643,8 @@ h3 {
   }
 
   .hero-copy p {
+    max-width: 100%;
+    margin-left: 0;
     font-size: 1rem;
   }
 
